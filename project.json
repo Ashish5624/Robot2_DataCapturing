@@ -4,7 +4,9 @@
   "description": "Captures data into web and desktop app simultaneously",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[25.4.2]"
+    "UiPath.Excel.Activities": "[3.0.1]",
+    "UiPath.System.Activities": "[25.4.2]",
+    "UiPath.UIAutomation.Activities": "[24.10.12]"
   },
   "webServices": [],
   "entitiesStores": [],

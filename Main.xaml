@@ -76,8 +76,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="842,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Process Started&quot;]" />
-    <Parallel sap:VirtualizedContainerService.HintSize="842,224.66666666666666" sap2010:WorkflowViewState.IdRef="Parallel_1">
+    <ui:LogMessage DisplayName="Log Message for start" sap:VirtualizedContainerService.HintSize="842,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Process Started&quot;]" />
+    <Parallel DisplayName="To run both Parallely" sap:VirtualizedContainerService.HintSize="842,224.66666666666666" sap2010:WorkflowViewState.IdRef="Parallel_1">
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="WebDataCapturing - Invoke Workflow File (WebDataCapturing.xaml)" sap:VirtualizedContainerService.HintSize="374,145.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="WebDataCapturing.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -89,6 +89,6 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Parallel>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="842,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Process Completed&quot;]" />
+    <ui:LogMessage DisplayName="Log Message for end" sap:VirtualizedContainerService.HintSize="842,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Process Completed&quot;]" />
   </Sequence>
 </Activity>
